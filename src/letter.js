@@ -1,0 +1,2 @@
+// The birthday letter, shown exactly as written. Line breaks are kept.
+export const LETTER = `Happy 18th Birthday! I hope this new chapter of your life brings you genuine happiness, more blessings, and beautiful memories. Always remember na you don't have to figure everything out agad-agad. Take your time, enjoy your youth, and never be afraid to chase your dreams. I wish you all the best in life because you deserve nothing but good things. Enjoy your special day and always keep that beautiful smile! Love lots!`;
