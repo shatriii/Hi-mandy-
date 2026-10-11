@@ -49,3 +49,7 @@ section{position:relative;padding:5rem 1.25rem;text-align:center}
 .cursor{position:fixed;top:-8px;left:-8px;width:16px;height:16px;border-radius:50%;background:radial-gradient(circle,#fff,var(--champ));box-shadow:0 0 14px var(--champ);pointer-events:none;opacity:0;z-index:200;transition:opacity .3s}
 @media(pointer:coarse){.cursor{display:none}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01ms!important}html{scroll-behavior:auto}.reveal{opacity:1;transform:none}}
+.grid figure:not(.wide){grid-column:1/-1;justify-self:center;width:min(100%,420px)}
+.letter-sec h2{position:relative;z-index:3}
+.envelope{margin-top:2rem;transition:margin-top .9s}
+.envelope.open{margin-top:7.5rem}

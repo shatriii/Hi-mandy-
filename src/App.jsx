@@ -26,20 +26,20 @@ function Music(){
 }
 function Welcome({onOpen}){
   return <section className="welcome" aria-label="Welcome"><Floaters/>
-    <div className="welcome-inner"><h1 className="script">A Little Surprise for You ♡</h1>
+    <div className="welcome-inner"><h1 className="script">A Little Surprise for you</h1>
     <p>Made with love, especially for your special day.</p>
-    <button className="btn" onClick={onOpen}>Open Your Surprise ✨</button></div></section>;
+    <button className="btn" onClick={onOpen}>Open Your Surprise</button></div></section>;
 }
 function Hero(){
   return <header className="hero" id="top"><Floaters n={26}/>
     <div className="frame"><span className="glow" aria-hidden="true"/><img src={HERO.src} alt={HERO.alt} fetchPriority="high"/></div>
-    <div className="hero-text"><h1 className="script">Happy 18th Birthday, Beautiful! ♡</h1>
+    <div className="hero-text"><h1 className="script">Happy 18th Birthday, Mandyy! ♡</h1>
     <p>A new chapter, a thousand dreams, and a lifetime of beautiful possibilities.</p></div></header>;
 }
 function Letter(){
   const [open,setOpen]=useState(false);
   return <section className="letter-sec" id="letter"><Reveal>
-    <h2 className="script">A Letter Just for You 💌</h2>
+    <h2 className="script">A letter just for you.</h2>
     <div className={'envelope'+(open?' open':'')} aria-hidden={open}><div className="flap"/><div className="env-front"><span>♡</span></div></div>
     {!open&&<button className="btn" onClick={()=>setOpen(true)}>Read Your Letter</button>}
     <article className={'paper'+(open?' show':'')} aria-hidden={!open} aria-label="Birthday letter"><p>{LETTER}</p></article>
