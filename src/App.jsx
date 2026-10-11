@@ -48,7 +48,7 @@ function Letter(){
 function Gallery(){
   return <section className="gallery" id="gallery"><Reveal>
     <div className="grid">{GALLERY.map((g,i)=><figure key={i} className={g.wide?'wide':''}><img src={g.src} alt={g.alt} loading="lazy"/></figure>)}</div>
-    <p className="caption script">Today, we celebrate you. ♡</p></Reveal></section>;
+    <p className="caption script">Today, we celebrate your birthday. ♡</p></Reveal></section>;
 }
 function Wishes(){
   return <section className="wishes"><Reveal><div className="bloom" aria-hidden="true">❀ ✿ ❀</div>
@@ -57,7 +57,6 @@ function Wishes(){
 function Final(){
   return <footer className="final"><Floaters n={14}/><Reveal>
     <h2 className="script">Here's to 18 and everything beautiful waiting for you. ♡</h2>
-    <p className="with">With love, always.</p>
     <button className="btn" onClick={()=>document.getElementById('top').scrollIntoView({behavior:'smooth'})}>Back to the Beginning</button></Reveal>
     <div className="fadeout" aria-hidden="true"/></footer>;
 }
